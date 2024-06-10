@@ -21,43 +21,7 @@ document.querySelector(".overlay").addEventListener("click", function(){
     document.querySelector(".overlay").classList.remove("active");
 })
 
-// fetch("https://raw.githubusercontent.com/younginnovations/internship-challenges/master/front-end/news_list.json")
-//     .then(res => {
-//         if (!res.ok) {
-//             throw new Error('Network response was not ok ' + res.statusText);
-//         }
-//         return res.json();
-//     })
-//     .then(data => {
-//         console.log(data); // Log the data to see its structure
-//         if (Array.isArray(data.news)) {
-//             const newsContainer = document.querySelector('.resources-card-outer');
-//             data.news.forEach(news => {
-//                 const markup = `
-                    // <div class="resources-card">
-                    //     <div class="resource-icon">
-                    //         <img src="${news.image}" alt="${news.title}">
-                    //     </div>
-                    //     <h3 class="title">${news.title}</h3>
-                    //     <p class="paragraph">${news.content}</p>
-                    //     <div class="news-details">
-                    //         <p><strong>Date:</strong> ${news.date}</p>
-                    //         <p><strong>Author:</strong> ${news.author}</p>
-                    //         <p><strong>Category:</strong> ${news.category}</p>
-                    //     </div>
-                    //     <div class="learn-more">
-                    //         <p>Learn more</p>
-                    //         <img src="./Assets/Campaigns/Outline.svg" alt="Arrow_learn_more">
-                    //     </div>
-                    // </div>`;
-//                 newsContainer.insertAdjacentHTML('beforeend', markup);
-//             });
-//         } else {
-//             console.error('Data is not an array:', data.news);
-//         }
-//     })
-//     .catch(error => console.log('Fetch error:', error));
-
+// Fetching api 
 async function fetchAndDisplayNews() {
     const response = await fetch('https://raw.githubusercontent.com/younginnovations/internship-challenges/master/front-end/news_list.json');
     const data = await response.json();
