@@ -393,6 +393,9 @@ footer .outer-footer .others .others-inner-box p {
   #campaigns .box2 .card-box {
     display: block;
   }
+  #campaigns .box2 .card-box .ownership {
+    margin: 20px 0px 20px 0px;
+  }
   #campaigns .box2 .card-box .campaigns-card .card-img {
     height: auto;
   }

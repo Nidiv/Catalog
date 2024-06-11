@@ -431,6 +431,9 @@ $primary-color: #FFFFFF;
             .box2 {
                 .card-box{
                     display: block;
+                    .ownership{
+                        margin: 20px 0px 20px 0px;
+                    }
                     .campaigns-card{
                         .card-img{
                             height: auto;
