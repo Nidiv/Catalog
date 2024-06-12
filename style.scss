@@ -53,31 +53,18 @@ $primary-color: #FFFFFF;
     background-size: cover;
 }
 
-@media (max-width: 648px) {
-    #hero{
-        padding-bottom: 20px;
-        .headings{
-            .search-outer.active{
-                width: auto;
-            }
-            .search-outer{
-                width: auto;
-            }
-        }
-    }
-}
-
 /* For tablets */
 @media (max-width: 910px) {
     #hero{
         padding-bottom: 20px;
         .headings{
+            #searchBar{
+                width: 308px;
+            }
             .search-outer.active{
                 width: 300px;
             }
-            .search-outer{
-                width: 300px;
-            }
+
             h1{
                 font-size: 40px;
             }
@@ -90,10 +77,15 @@ $primary-color: #FFFFFF;
                 .container{
                     justify-content: center;
                     width: 100%;
+                    flex-direction: column;
+                    .search-btn{
+                        margin-right: 0;
+                    }
                     .navdiv{
                         flex-direction: column;
                         justify-content: center;
                         align-items: center;
+                        padding-right: 0;
                         .logo{
                             margin-right: 0;
                         }
@@ -221,6 +213,7 @@ $primary-color: #FFFFFF;
                     // justify-content: center;
                     align-items: center;
                     margin-top: 20px;
+                    width: auto;
                     .others-inner-box{
                         margin-top: 10px;
                         text-align: center;
@@ -347,6 +340,38 @@ $primary-color: #FFFFFF;
     max-width: 412px;
     max-height: 320px;
 }
+
+@media (max-width: 910px) {
+    .dropdown-box{
+        .dropdown-items{
+            display: flex;
+            margin: 16px 16px;
+            padding: 8px;
+            img{
+                width: 16px;
+                height: 16px;
+            }
+            .dropdown-text{
+                padding-left: 16px;
+                font-family: $font-stack;
+                h5{
+                    margin-bottom: 4px;
+                    font-size: 14px;
+                }
+                p{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    .dropdown-box.open-box {
+        max-height: 520px;
+    }
+
+}
+
+
 
 #campaigns{
     background-color:#F9F9FF;
@@ -581,10 +606,12 @@ $primary-color: #FFFFFF;
 
 
 // flex 
-@media (max-width: 768px) {
-    #latest-resources .resource-card-box {
-        flex-direction: column;
-        align-items: center;
+@media (max-width: 910px) {
+    #latest-resources{
+        .resource-card-box {
+            flex-direction: column;
+            align-items: center;
+        }
     }
     #latest-resources .resources-card {
         margin-top: 30px;
@@ -744,6 +771,52 @@ $primary-color: #FFFFFF;
     }
 }
 
+@media (max-width: 910px) {
+    #news{
+        .news-box{
+            .resources-card-outer{
+                .resources-card{
+                    .resource-icon{
+                        img{
+                            width: 100%;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 910px) {
+    #news{
+        .news-box{
+            .resources-card-outer{
+                .resources-card{
+                    .resource-icon{
+                        img{
+                            width: 100%;
+                        }
+                    }           
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    #news{
+        .news-box{
+            .news-container{
+                h3{
+                    font-size: 20px;
+                }
+                p{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}
 
 #contact-us{
     background-color: #fff;
@@ -867,7 +940,7 @@ $primary-color: #FFFFFF;
 @media (max-width: 480px) {
     #contact-us{
         .box4 .container4 h3 {
-            font-size: 24px;
+            font-size: 18px;
             margin-top: 40px;
         }
     
@@ -1040,6 +1113,7 @@ $primary-color: #FFFFFF;
                 }
                 .description{
                     text-align: center;
+                    margin-right: 0;
                     .see-more{
                         justify-content: center;
                     }
@@ -1108,6 +1182,7 @@ $primary-color: #FFFFFF;
         .search-outer.active{
             transform: translateY(-98%);
             transition: all ease-in-out 300ms;
+            
         }
         .search-outer{
             transform: translateY(-500%);
@@ -1157,6 +1232,7 @@ $primary-color: #FFFFFF;
         .outer-box{
             flex-wrap: wrap;
             flex-direction: column;
+            padding: 0;
             .inner-logo{
                 margin-top: 20px;
                 margin-bottom: 20px;
