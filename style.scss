@@ -53,6 +53,18 @@ $primary-color: #FFFFFF;
     background-size: cover;
 }
 
+// Laptop 
+@media (max-width: 1024px) {
+    #hero{
+        padding-bottom: 232px;
+        .headings{
+            h1{
+                font-size: 54px;
+            }
+        }
+    }
+}
+
 /* For tablets */
 @media (max-width: 910px) {
     #hero{
@@ -101,7 +113,17 @@ $primary-color: #FFFFFF;
     @media (max-width: 480px) {
         #hero{
             padding-bottom: 40px;
+            .navbar{
+                #drop{
+                    .dropdown-box.open-box{
+                        right: 0;
+                    }
+                }
+            }
             .headings{
+                button{
+                    font-size: 16px;
+                }
                 h1{
                     font-size: 20px;
                 }
@@ -627,33 +649,21 @@ $primary-color: #FFFFFF;
 
 
 
-@media (max-width: 1024px) {
-    .box3 .container3 h3 {
-        font-size: 28px;
-        margin-top: 60px;
-    }
+@media (max-width: 910px) {
 
-    .box3 .container3 p {
-        font-size: 18px;
-    }
+#latest-resources{
+        .box3 .container3 h3 {
+            font-size: 24px;
+            margin-top: 40px;
+        }
 
-    .box3 .resource-card-box .resources-card {
-        flex: 1 1 45%; /* Make cards take up 45% of the width */
-    }
-}
+        .box3 .container3 p {
+            font-size: 16px;
+        }
 
-@media (max-width: 768px) {
-    .box3 .container3 h3 {
-        font-size: 24px;
-        margin-top: 40px;
-    }
-
-    .box3 .container3 p {
-        font-size: 16px;
-    }
-
-    .box3 .resource-card-box .resources-card {
-        flex: 1 1 100%; /* Make cards take up 100% of the width */
+        .box3 .resource-card-box .resources-card {
+            flex: 1 1 100%; /* Make cards take up 100% of the width */
+        }
     }
 }
 
@@ -700,10 +710,10 @@ $primary-color: #FFFFFF;
         }
         .resources-card-outer{
             display: flex;
-            justify-content: space-evenly;
             width: 80%;
             flex-wrap: wrap;
             font-family: $font-stack;
+            justify-content: space-around;
             .resources-card{
                 display: flex;
                 flex-direction: column;
@@ -914,7 +924,7 @@ $primary-color: #FFFFFF;
 @media (max-width: 910px) {
     #contact-us{
             .box4 .container4 h3 {
-                font-size: 28px;
+                font-size: 24px;
                 margin-top: 60px;
             }
         
@@ -1107,6 +1117,9 @@ $primary-color: #FFFFFF;
                 .teams{
                     display: block;
                     width: auto;
+                    .teams-left{
+                        margin-right: 0;
+                    }
                     h3{
                         font-size: 20px;
                     }
@@ -1114,6 +1127,7 @@ $primary-color: #FFFFFF;
                 .description{
                     text-align: center;
                     margin-right: 0;
+                    width: auto;
                     .see-more{
                         justify-content: center;
                     }

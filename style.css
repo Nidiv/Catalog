@@ -50,6 +50,14 @@
   background-size: cover;
 }
 
+@media (max-width: 1024px) {
+  #hero {
+    padding-bottom: 232px;
+  }
+  #hero .headings h1 {
+    font-size: 54px;
+  }
+}
 /* For tablets */
 @media (max-width: 910px) {
   #hero {
@@ -92,6 +100,12 @@
 @media (max-width: 480px) {
   #hero {
     padding-bottom: 40px;
+  }
+  #hero .navbar #drop .dropdown-box.open-box {
+    right: 0;
+  }
+  #hero .headings button {
+    font-size: 16px;
   }
   #hero .headings h1 {
     font-size: 20px;
@@ -557,27 +571,15 @@ footer .outer-footer .others .others-inner-box p {
     width: 100%;
   }
 }
-@media (max-width: 1024px) {
-  .box3 .container3 h3 {
-    font-size: 28px;
-    margin-top: 60px;
-  }
-  .box3 .container3 p {
-    font-size: 18px;
-  }
-  .box3 .resource-card-box .resources-card {
-    flex: 1 1 45%; /* Make cards take up 45% of the width */
-  }
-}
-@media (max-width: 768px) {
-  .box3 .container3 h3 {
+@media (max-width: 910px) {
+  #latest-resources .box3 .container3 h3 {
     font-size: 24px;
     margin-top: 40px;
   }
-  .box3 .container3 p {
+  #latest-resources .box3 .container3 p {
     font-size: 16px;
   }
-  .box3 .resource-card-box .resources-card {
+  #latest-resources .box3 .resource-card-box .resources-card {
     flex: 1 1 100%; /* Make cards take up 100% of the width */
   }
 }
@@ -620,10 +622,10 @@ footer .outer-footer .others .others-inner-box p {
 }
 #news .news-box .resources-card-outer {
   display: flex;
-  justify-content: space-evenly;
   width: 80%;
   flex-wrap: wrap;
   font-family: helvetica, sans-serif;
+  justify-content: space-around;
 }
 #news .news-box .resources-card-outer .resources-card {
   display: flex;
@@ -783,7 +785,7 @@ footer .outer-footer .others .others-inner-box p {
 /* For tablets */
 @media (max-width: 910px) {
   #contact-us .box4 .container4 h3 {
-    font-size: 28px;
+    font-size: 24px;
     margin-top: 60px;
   }
   #contact-us .box4 .container4 p {
@@ -942,12 +944,16 @@ footer .outer-footer .others .others-inner-box p {
     display: block;
     width: auto;
   }
+  #about-us .outer-about-us .teams .teams-left {
+    margin-right: 0;
+  }
   #about-us .outer-about-us .teams h3 {
     font-size: 20px;
   }
   #about-us .outer-about-us .description {
     text-align: center;
     margin-right: 0;
+    width: auto;
   }
   #about-us .outer-about-us .description .see-more {
     justify-content: center;
